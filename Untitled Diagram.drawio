@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-20T09:29:04.787Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4464.0 Safari/537.36 Edg/91.0.852.0" etag="G2fnAsWi79kHTRj18fk8" version="14.6.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-04-21T04:54:36.459Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4464.0 Safari/537.36 Edg/91.0.852.0" etag="U_k8eEM6-RVf8INWgd2L" version="14.6.1" type="github" pages="4">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="通信数据流">
     <mxGraphModel dx="1052" dy="553" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -361,19 +361,19 @@
       <root>
         <mxCell id="zIf96bGLffIKmfSDRICA-0" />
         <mxCell id="zIf96bGLffIKmfSDRICA-1" parent="zIf96bGLffIKmfSDRICA-0" />
-        <mxCell id="gkB1wzpkWD1aDH1Cd5sD-0" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;shadow=0;fontSize=16;startSize=0;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+        <mxCell id="gkB1wzpkWD1aDH1Cd5sD-0" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;shadow=0;fontSize=16;startSize=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
           <mxGeometry x="150" y="300" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="gkB1wzpkWD1aDH1Cd5sD-3" value="多线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+        <mxCell id="gkB1wzpkWD1aDH1Cd5sD-3" value="多线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fontSize=16;fillColor=#dae8fc;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
           <mxGeometry x="80" y="340" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="gkB1wzpkWD1aDH1Cd5sD-4" value="接收线程：轮询读取数据，每次读取成功后放入缓存并通知处理线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+        <mxCell id="gkB1wzpkWD1aDH1Cd5sD-4" value="接收线程：轮询读取数据，每次读取成功后放入缓存并通知处理线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fontSize=16;fillColor=#dae8fc;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
           <mxGeometry x="210" y="290" width="500" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="biLt5giy6HoTFXKKl_Wp-0" value="单线程：在两次读取数据间的空闲时间解析已接收缓冲区的数据并写入文件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
-          <mxGeometry x="80" y="160" width="540" height="20" as="geometry" />
+        <mxCell id="biLt5giy6HoTFXKKl_Wp-0" value="单线程：在两次读取数据间的空闲时间解析已接收缓冲区的数据并写入文件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fontSize=16;fillColor=#ffe6cc;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+          <mxGeometry x="80" y="221" width="540" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="biLt5giy6HoTFXKKl_Wp-1" value="处理线程：收到通知则对缓存数据进行解析处理，然后追加写入文件" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+        <mxCell id="biLt5giy6HoTFXKKl_Wp-1" value="处理线程：收到通知则对缓存数据进行解析处理，然后追加写入文件" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fontSize=16;fillColor=#dae8fc;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
           <mxGeometry x="220" y="390" width="500" height="20" as="geometry" />
         </mxCell>
         <mxCell id="2yGA0xoM0reiYhixCfIC-4" value="缓冲区大小4096字节的倍数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
@@ -381,6 +381,30 @@
         </mxCell>
         <mxCell id="hYycGzM3igilQBS3ACe7-0" value="延后处理：先保存文件，格式已确定，用到该文件导入时再进行解析。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
           <mxGeometry x="80" y="540" width="510" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-0" value="我们的任务是通信过程，不是对数据的应用，保存数据即可完成任务。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+          <mxGeometry x="80" y="598" width="506" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startSize=0;strokeWidth=1;" edge="1" parent="zIf96bGLffIKmfSDRICA-1" source="Q-tZgVoWaBqLu-4W6y2v-2" target="Q-tZgVoWaBqLu-4W6y2v-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-2" value="数据产生" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+          <mxGeometry x="83" y="677" width="74" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startSize=0;strokeWidth=1;" edge="1" parent="zIf96bGLffIKmfSDRICA-1" source="Q-tZgVoWaBqLu-4W6y2v-3" target="Q-tZgVoWaBqLu-4W6y2v-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-3" value="数据通信" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+          <mxGeometry x="227" y="677" width="74" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startSize=0;strokeWidth=1;" edge="1" parent="zIf96bGLffIKmfSDRICA-1" source="Q-tZgVoWaBqLu-4W6y2v-5" target="Q-tZgVoWaBqLu-4W6y2v-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-5" value="数据保存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+          <mxGeometry x="368" y="677" width="74" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-tZgVoWaBqLu-4W6y2v-7" value="数据应用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="zIf96bGLffIKmfSDRICA-1">
+          <mxGeometry x="503" y="677" width="74" height="23" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
