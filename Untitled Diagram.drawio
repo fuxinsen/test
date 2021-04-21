@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-21T04:54:36.459Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4464.0 Safari/537.36 Edg/91.0.852.0" etag="U_k8eEM6-RVf8INWgd2L" version="14.6.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-04-21T05:01:18.737Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4464.0 Safari/537.36 Edg/91.0.852.0" etag="H2QjX1n-i1Q-b4N_Yrdf" version="14.6.1" type="github" pages="4">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="通信数据流">
     <mxGraphModel dx="1052" dy="553" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -335,23 +335,23 @@
         <mxCell id="WIUvArSTko8I9XCQk7qy-56" value="N×256字节&amp;nbsp; 暂定N=256，共65536字节，&lt;br&gt;因为速率能达到峰值，抓包显示完整发送需要约0.1s" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
           <mxGeometry x="361" y="440" width="340" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WIUvArSTko8I9XCQk7qy-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;startSize=0;strokeWidth=1;" edge="1" parent="WIUvArSTko8I9XCQk7qy-1" source="WIUvArSTko8I9XCQk7qy-57" target="WIUvArSTko8I9XCQk7qy-58">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WIUvArSTko8I9XCQk7qy-57" value="采样数据" style="whiteSpace=wrap;html=1;shadow=0;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
-          <mxGeometry x="130" y="120" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="WIUvArSTko8I9XCQk7qy-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;startSize=0;strokeWidth=1;" edge="1" parent="WIUvArSTko8I9XCQk7qy-1" source="WIUvArSTko8I9XCQk7qy-58" target="WIUvArSTko8I9XCQk7qy-60">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WIUvArSTko8I9XCQk7qy-58" value="设备封装发送" style="whiteSpace=wrap;html=1;shadow=0;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
-          <mxGeometry x="330" y="120" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="WIUvArSTko8I9XCQk7qy-60" value="主机解析保存" style="whiteSpace=wrap;html=1;shadow=0;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
-          <mxGeometry x="530" y="120" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="WIUvArSTko8I9XCQk7qy-62" value="采样数据流程：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
           <mxGeometry x="20" y="90" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6BovLUqT62Ds5_9pzkN-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startSize=0;strokeWidth=1;" edge="1" parent="WIUvArSTko8I9XCQk7qy-1" source="Q6BovLUqT62Ds5_9pzkN-0" target="Q6BovLUqT62Ds5_9pzkN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6BovLUqT62Ds5_9pzkN-0" value="采样结果" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
+          <mxGeometry x="181" y="88.5" width="74" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6BovLUqT62Ds5_9pzkN-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startSize=0;strokeWidth=1;" edge="1" parent="WIUvArSTko8I9XCQk7qy-1" source="Q6BovLUqT62Ds5_9pzkN-3" target="Q6BovLUqT62Ds5_9pzkN-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6BovLUqT62Ds5_9pzkN-3" value="设备封装发送" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
+          <mxGeometry x="319" y="88.5" width="106" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6BovLUqT62Ds5_9pzkN-5" value="主机解析保存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;" vertex="1" parent="WIUvArSTko8I9XCQk7qy-1">
+          <mxGeometry x="473" y="88.5" width="106" height="23" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
