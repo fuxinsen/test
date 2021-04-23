@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-23T09:04:03.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4464.0 Safari/537.36 Edg/91.0.852.0" etag="ymRz3bkXozO7jbTByc9V" version="14.6.1" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-04-23T14:37:43.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4464.0 Safari/537.36 Edg/91.0.852.0" etag="yF_l-EzM2jEP-p4t5q9A" version="14.6.1" type="github" pages="6">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="通信数据流">
     <mxGraphModel dx="1052" dy="553" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -579,6 +579,9 @@
         </mxCell>
         <mxCell id="V4JJIjy-esLr4Vu2brOE-3" value="BufferDataWritten：指定已处理TxBuffer的长度，推进write索引指针，并调用&lt;span style=&quot;text-align: left&quot;&gt;ScheduleNextTransmission&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;fontColor=#000000;" vertex="1" parent="blZLn68p29Jf-fXseGTa-1">
           <mxGeometry x="101" y="670" width="745" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="V4JJIjy-esLr4Vu2brOE-4" value="IRP ： I/O Request Packet.&lt;br&gt;URB：USB Request Block." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=16;fontColor=#000000;" vertex="1" parent="blZLn68p29Jf-fXseGTa-1">
+          <mxGeometry x="103" y="762" width="204" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
