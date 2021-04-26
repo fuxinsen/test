@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-26T13:21:55.903Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4471.0 Safari/537.36 Edg/91.0.864.1" etag="7Iu7k8afElUyT7tfk7EA" version="14.6.6" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-04-26T13:40:46.596Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4471.0 Safari/537.36 Edg/91.0.864.1" etag="5VCZdJxLdCnHy4jyKgGP" version="14.6.6" type="github" pages="6">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="通信数据流">
     <mxGraphModel dx="1052" dy="553" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -217,7 +217,7 @@
           <mxGeometry x="516" y="914" width="259" height="13" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-15" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;top=0;strokeColor=#9673a6;fillColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="396" y="820" width="120" height="13" as="geometry" />
+          <mxGeometry x="420" y="820" width="96" height="13" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-18" value="ADC外设" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="33" y="722.5" width="59" height="18" as="geometry" />
@@ -234,11 +234,11 @@
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-22" value="采样完成" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="211" y="698" width="58" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="lHdMDA8-IUvMUGYcyJJB-23" value="控制任务 100us" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="204" y="817.5" width="94" height="18" as="geometry" />
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-23" value="位置环控制" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry x="123" y="813.5" width="70" height="18" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-24" value="USB任务 20us" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=#e1d5e7;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="412.5" y="814.5" width="88" height="18" as="geometry" />
+          <mxGeometry x="424" y="814.5" width="88" height="18" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-25" value="剩余时间主循环" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=#fff2cc;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="518" y="813.5" width="94" height="18" as="geometry" />
@@ -261,14 +261,14 @@
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-32" value="20us" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="156" y="722.5" width="36" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="lHdMDA8-IUvMUGYcyJJB-33" value="" style="endArrow=classic;html=1;entryX=0.465;entryY=-0.097;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-33" value="" style="endArrow=classic;html=1;entryX=0.465;entryY=-0.097;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.51;exitY=1.132;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="sU5JGQ7vEdmB1xj-2W_L-1" source="lHdMDA8-IUvMUGYcyJJB-34">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="396" y="739" as="sourcePoint" />
-            <mxPoint x="397.1300000000001" y="795.7539999999999" as="targetPoint" />
+            <mxPoint x="284" y="753.5" as="sourcePoint" />
+            <mxPoint x="285.1300000000001" y="810.2539999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-34" value="读取采样结果" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="359" y="796.5" width="82" height="18" as="geometry" />
+          <mxGeometry x="243" y="740.5" width="82" height="18" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-35" value="20us" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="657" y="717.5" width="36" height="18" as="geometry" />
@@ -286,10 +286,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-43" value="主循环：&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;低优先级的计算任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="544" y="604" width="190" height="18" as="geometry" />
+          <mxGeometry x="293" y="616" width="190" height="18" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-44" value="定时器中断：高优先级的实时任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="544" y="622" width="190" height="18" as="geometry" />
+          <mxGeometry x="293" y="634" width="190" height="18" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-45" value="" style="endArrow=classic;html=1;entryX=-0.005;entryY=1.385;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="sU5JGQ7vEdmB1xj-2W_L-1" target="lHdMDA8-IUvMUGYcyJJB-38">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -314,15 +314,15 @@
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-53" value="" style="endArrow=classic;html=1;entryX=-0.005;entryY=1.385;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="396" y="925" as="sourcePoint" />
-            <mxPoint x="395.99749999999995" y="858.9950000000001" as="targetPoint" />
+            <mxPoint x="421" y="925" as="sourcePoint" />
+            <mxPoint x="420.99749999999995" y="858.9950000000001" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="396.02" y="879.99" />
+              <mxPoint x="421.02" y="879.99" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-54" value="读取事件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
-          <mxGeometry x="366" y="843" width="58" height="18" as="geometry" />
+          <mxGeometry x="391" y="843" width="58" height="18" as="geometry" />
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-56" value="发送指令" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="488" y="843" width="58" height="18" as="geometry" />
@@ -335,6 +335,30 @@
         </mxCell>
         <mxCell id="lHdMDA8-IUvMUGYcyJJB-60" value="定时器中断 周期125us" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
           <mxGeometry x="56" y="871" width="130" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-61" value="" style="endArrow=none;dashed=1;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="618" y="833" as="sourcePoint" />
+            <mxPoint x="760" y="833" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-62" value="开始下一次中断" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry x="568" y="866.5" width="94" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-63" value="" style="endArrow=classic;html=1;" edge="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="613.5" y="859.5" as="sourcePoint" />
+            <mxPoint x="613.5" y="835.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-64" value="速度环控制" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry x="205" y="813.5" width="70" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-65" value="电流环控制(共100us)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry x="288" y="814.5" width="123" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="lHdMDA8-IUvMUGYcyJJB-66" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;top=0;fillColor=none;strokeColor=#000000;" vertex="1" parent="sU5JGQ7vEdmB1xj-2W_L-1">
+          <mxGeometry x="201" y="829" width="84" height="3.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
